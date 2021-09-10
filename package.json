@@ -1,0 +1,24 @@
+{
+  "name": "har-extractor",
+  "version": "1.0.0",
+  "description": "A minimal application to extract files out of the HAR format",
+  "main": "main.js",
+  "build": {
+    "appId": "com.choozn.har-extractor",
+    "productName": "HAR Extractor"
+  },
+  "nsis": {
+    "oneClick": true,
+    "runAfterFinish": false
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "choozn",
+  "devDependencies": {
+    "electron": "^14.0.0"
+  },
+  "dependencies": {
+    "mime-db": "^1.49.0"
+  }
+}
