@@ -1,4 +1,4 @@
-HAR Extractor v1.0
+HAR Extractor
 ---
 
 HAR Extractor is a minimal application to extract files out of the HAR format. 
@@ -22,20 +22,23 @@ The specification for the HTTP Archive (HAR) format defines an archival format f
 How to use this tool?
 ---
 
+Step 0.
+- ![Download](https://github.com/choozn/har-extractor/releases/download/v1.0/HAR.Extractor.Setup.1.0.0.exe) the installer and start the installation of the tool.
+
 Step 1.
-- Record the HAR data in the network tab of the Developer Tools.
+- Record the HAR data in the network tab of the Developer Tools.<br/>
 ![Step 1](https://i.imgur.com/kP6NEKl.png)
 
 Step 2.
-- Copy the data as HAR (Copy All As HAR) to your clipboard.
+- Copy the data as HAR (Copy All As HAR) to your clipboard.<br/>
 ![Step 2](https://i.imgur.com/hCkjhA9.png)
 
 Step 3.
-- Start the tool.
+- Start the tool.<br/>
 ![Step 3](https://i.imgur.com/LQifINc.png)
 
 Step 4.
-- Select a base folder.
+- Select a base folder.<br/>
 ![Step 4](https://i.imgur.com/ar20xu8.png)
 
 Step 5.
@@ -43,3 +46,7 @@ Step 5.
 
 Step 6.
 - Enjoy your extracted files!
+
+Credits
+---
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
