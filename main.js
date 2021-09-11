@@ -1,10 +1,10 @@
 const { app, clipboard, dialog, shell } = require('electron')
 const { mkdirSync, writeFileSync, existsSync } = require('fs');
-var db = require('mime-db')
+var mimeDB = require('mime-db')
 
 app.whenReady().then(() => {
   main();
-})
+});
 
 const main = async () => {
 
@@ -25,6 +25,8 @@ const main = async () => {
           name: entry["request"]["url"].split("/").pop().split('?').shift().split('.').shift() || "index",
         }
       ));
+
+      if (!harData["pages"][0]["title"]) throw (new Error());
 
     } catch (error) {
 
@@ -59,7 +61,7 @@ const main = async () => {
           try {
 
             let buffer = Buffer.from(entry.data, entry.encoding);
-            let extension = db[entry.type.split(';').shift()].extensions[0];
+            let extension = mimeDB[entry.type.split(';').shift()].extensions[0];
             return writeFileSync(`${folder}/${entry.name}.${extension}`, buffer);
 
             // No extension was found for the provided data
