@@ -5,11 +5,11 @@
   "main": "main.js",
   "build": {
     "appId": "com.choozn.har-extractor",
-    "productName": "HAR Extractor"
-  },
-  "nsis": {
-    "oneClick": true,
-    "runAfterFinish": false
+    "productName": "HAR Extractor",
+    "nsis": {
+      "oneClick": false,
+      "runAfterFinish": false
+    }
   },
   "scripts": {
     "start": "electron ."
