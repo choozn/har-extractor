@@ -1,4 +1,4 @@
-HAR Extractor v1.0
+HAR Extractor
 ---
 
 HAR Extractor is a minimal application to extract files out of the HAR format. 
