@@ -141,10 +141,10 @@ function suffixDuplicates(arrayWithoutSuffixes) {
 
     if (itemCount == 2)
       // First occurrence of an item which has multiple occurrences
-      list[firstOccurrences[item]] = `${list[firstOccurrences[item]]} (1)`;
+      list[firstOccurrences[item]] = `${list[firstOccurrences[item]]}-(1)`;
     if (count[item] > 1)
       // All other occurrences 
-      list[i] = `${list[i]} (${count[item]})`;
+      list[i] = `${list[i]}-(${count[item]})`;
     else
       // Item without any other occurrences
       firstOccurrences[item] = i;
