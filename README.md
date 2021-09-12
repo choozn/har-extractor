@@ -8,7 +8,7 @@ Therefore, no .har files are needed.
 Please note that you have to have the HAR-content in your clipboard when using this tool!
 Also make sure to select a suiting and valid base folder (e.g `D:\Documents`).
 
-→ ![Download!](https://github.com/choozn/har-extractor/releases/download/v1.0/HAR.Extractor.Setup.1.0.0.exe)
+→ ![Download!](https://github.com/choozn/har-extractor/releases/download/v1.1/HAR.Extractor.Setup.1.1.0.exe)
 
 What is HAR?
 ---
