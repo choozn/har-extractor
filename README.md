@@ -39,13 +39,13 @@ Step 3.
 
 Step 4.
 - Select a base folder.<br/>
-![Step 4](https://i.imgur.com/ar20xu8.png)
+![Step 4](https://i.imgur.com/nuesQSf.png)
 
 Step 5.
-- Click "Select this folder".
+- Click "Select extract".
 
 Step 6.
-- Enjoy your extracted files!
+- Enjoy your files!
 
 Credits
 ---
