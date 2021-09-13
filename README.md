@@ -23,7 +23,7 @@ How to use this tool?
 ---
 
 Step 0.
-- ![Download](https://github.com/choozn/har-extractor/releases) the installer and start the installation of the tool.
+- [Download](https://github.com/choozn/har-extractor/releases) the installer and start the installation of the tool.
 
 Step 1.
 - Record the HAR data in the network tab of the Developer Tools.<br/>
