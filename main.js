@@ -30,7 +30,7 @@ const main = async () => {
     // Get root of harData
     var harData = (JSON.parse(String(clipboardData)))["log"];
     // Remove illegal characters from subfolder name
-    var harTitle = harData["pages"][0]["title"].replace(/(\W+)/gi, '-') || "HAR-Export";
+    var harTitle = (harData["pages"][0]["title"] || "HAR-Export").replace(/(\W+)/gi, '-');
 
     // Extract all needed information from provided HAR data.
     var parsedHarData = harData["entries"].map((entry) => {
@@ -85,19 +85,20 @@ const main = async () => {
 
       if (entry.data) {
 
-        try {
+        let buffer = Buffer.from(entry.data, entry.encoding);
 
-          let buffer = Buffer.from(entry.data, entry.encoding);
-          let extension = mimeDB[entry.type].extensions[0];
+        let mimeType = mimeDB[entry.type];
 
+        var extension;
+        if (mimeType)
+          extension = mimeDB[entry.type].extensions[0];
+
+        if (extension) {
+          // An extension was found for the provided data and appended
           return writeFileSync(`${folder}/${entry.name}.${extension}`, buffer);
-
+        } else {
           // No extension was found for the provided data
-        } catch (error) {
-
-          let buffer = Buffer.from(entry.data, entry.encoding);
           return writeFileSync(`${folder}/${entry.name}`, buffer);
-
         }
 
       }
