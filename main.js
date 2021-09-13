@@ -54,7 +54,7 @@ const main = async () => {
     if (parsedHarData) {
 
       // Select base path for the extraction
-      var baseFolder = (await dialog.showOpenDialog({ properties: ['openDirectory'] }))["filePaths"][0];
+      var baseFolder = (await dialog.showOpenDialog({ properties: ['openDirectory'], buttonLabel: "Extract here" }))["filePaths"][0];
 
       // If cancel was clicked
       if (!baseFolder) {
@@ -108,7 +108,7 @@ const main = async () => {
 
   }
 
-  // Helper function to fix export bugs of firefox
+  // Helper function to fix export bugs caused by obsolete MIME-Types
   function fixMimeTypes(type) {
 
     let fixedType = type
@@ -143,7 +143,7 @@ function suffixDuplicates(arrayWithoutSuffixes) {
       // First occurrence of an item which has multiple occurrences
       list[firstOccurrences[item]] = `${list[firstOccurrences[item]]}-(1)`;
     if (count[item] > 1)
-      // All other occurrences 
+      // All other occurrences
       list[i] = `${list[i]}-(${count[item]})`;
     else
       // Item without any other occurrences
