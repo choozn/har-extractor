@@ -1,0 +1,15 @@
+{
+
+    "defaultMimeType": "text/plain",
+    "defaultFileName": "index",
+    "defaultEncoding": "utf8",
+    "defaultExtension": "",
+    "defaultFolderName": "HAR-Export",
+
+    "obsoleteMimeTypes": [
+        ["image/jpg", "image/jpeg"],
+        ["application/x-javascript", "application/javascript"],
+        ["text/javascript", "application/javascript"]
+    ]
+
+}
